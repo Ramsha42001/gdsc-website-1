@@ -40,7 +40,7 @@ function Home() {
   }, []);
 
   const fetchAboutData = async () => {
-    await axios.get('https://gdscbackend.vercel.app/ourteam/gdsclead')
+    await axios.get('https://gdsc-website-1-4bos.vercel.app/ourteam/gdsclead')
       .then(response => {
         console.log(response.data);
         setLeads(response.data);

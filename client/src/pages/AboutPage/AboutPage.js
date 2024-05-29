@@ -50,7 +50,7 @@ function AboutPage() {
 
   const fetchData = async (Domain) => {
     try {
-      const response = await fetch(`https://gdscbackend.vercel.app/ourteam/batchpic?domain=${Domain}`);
+      const response = await fetch(`https://gdsc-website-1-4bos.vercel.app/ourteam/batchpic?domain=${Domain}`);
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }

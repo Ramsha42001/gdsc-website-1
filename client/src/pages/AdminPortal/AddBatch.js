@@ -16,7 +16,7 @@ function AddBatch() {
     event.preventDefault();
 
     try {
-      const response = await axios.post("https://gdscbackend.vercel.app/ourteam/batchpic", formData);
+      const response = await axios.post("https://gdsc-website-1-4bos.vercel.app/ourteam/batchpic", formData);
 
       console.log("Batch photo data posted successfully:", response.data);
 

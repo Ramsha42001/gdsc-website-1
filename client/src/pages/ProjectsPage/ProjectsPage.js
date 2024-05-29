@@ -211,7 +211,7 @@ function ProjectsPage() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("https://gdscbackend.vercel.app/projects/all");
+      const response = await fetch("https://gdsc-website-1-4bos.vercel.app/projects/all");
       const data = await response.json();
       setAllData(data);
       console.log(data);
@@ -222,7 +222,7 @@ function ProjectsPage() {
 
   const handleFilterChange = async (selectedDomain, selectedTenure) => {
     try {
-      let url = "https://gdscbackend.vercel.app/projects/filter";
+      let url = "https://gdsc-website-1-4bos.vercel.app/projects/filter";
 
       if (selectedDomain && selectedTenure) {
         console.log('working');

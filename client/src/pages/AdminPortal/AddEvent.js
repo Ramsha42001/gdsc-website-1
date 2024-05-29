@@ -30,7 +30,7 @@ function AddEvent() {
           console.log("handleSubmit called");
     
         try {
-          const response = await axios.post("https://gdscbackend.vercel.app/events/", formData);
+          const response = await axios.post("https://gdsc-website-1-4bos.vercel.app/events/", formData);
     
           console.log("Event data posted successfully:", response.data);
     

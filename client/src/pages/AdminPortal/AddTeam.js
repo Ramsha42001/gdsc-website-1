@@ -23,7 +23,7 @@ function AddTeam() {
     console.log("Form Data:", formData);
     try {
       const response = await axios.post(
-        "https://gdscbackend.vercel.app/ourteam/",
+        "https://gdsc-website-1-4bos.vercel.app/ourteam/",
         formData
       );
 

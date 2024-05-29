@@ -127,7 +127,7 @@ function TeamsPage(props) {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("https://gdscbackend.vercel.app/ourteam/gdsclead");
+      const response = await fetch("https://gdsc-website-1-4bos.vercel.app/ourteam/gdsclead");
       const data = await response.json();
       setAllData(data);
     } catch (error) {
@@ -139,7 +139,7 @@ function TeamsPage(props) {
   console.log();
   const handleTenureChange = async (selectedDomain, selectedTenure) => {
     try {
-      let url = `https://gdscbackend.vercel.app/ourteam/filter?tenure=${selectedTenure}`;
+      let url = `https://gdsc-website-1-4bos.vercel.app/ourteam/filter?tenure=${selectedTenure}`;
       const response = await fetch(url);
       const data = await response.json();
       const gdscLeadData = data.filter(member => member.position === "gdsclead");
@@ -157,7 +157,7 @@ function TeamsPage(props) {
       console.log("entered");
       try {
         // let url = `https://gdscbackend.vercel.app/ourteam/filter?domain=${selectedDomain}&tenure=${selectTenure}`;
-        let url = "https://gdscbackend.vercel.app/ourteam/filter?";
+        let url = "https://gdsc-website-1-4bos.vercel.app/ourteam/filter?";
 
       if (selectedDomain && selectTenure) {
         // console.log('working');
